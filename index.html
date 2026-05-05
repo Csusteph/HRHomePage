@@ -241,7 +241,7 @@
   .footer-chips { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; margin-top: 28px; }
   .footer-chip { background: var(--black); color: #fff; padding: 7px 14px; border-radius: 2px; font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; }
 
-  /* ===== Mission / Vision / 2025 ===== */
+  /* ===== Mission / Vision / 2026 ===== */
   .grid-2 { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 20px; }
   @media (min-width: 1024px) { .grid-2 { grid-template-columns: 1fr 1fr; } }
   .pv-card { padding: 32px 30px; min-height: 220px; display: flex; flex-direction: column; }
@@ -418,7 +418,7 @@
           <span>HR</span>
           <span><span class="accent-line">Home</span></span>
         </h1>
-        <p class="tagline">Your one-stop shop for our People Vision, 2025 Mission, Strategic Pillars, Winning Behaviors, and the contacts that keep us moving.</p>
+        <p class="tagline">Your one-stop shop for our People Vision, 2026 Mission, Strategic Pillars, Winning Behaviors, and the contacts that keep us moving.</p>
         <div class="hero-actions">
           <button class="btn-white" onclick="scrollToId('contacts')">
             <i data-lucide="phone"></i> Helpful Contacts
@@ -579,7 +579,7 @@
       <div class="bubble" style="width:140px;height:140px;bottom:-60px;right:10%;"></div>
       <div class="bubble" style="width:60px;height:60px;top:30%;right:20%;"></div>
       <div style="position:relative;z-index:10;">
-        <div class="red-slide-year">2025</div>
+        <div class="red-slide-year">2026</div>
         <h3 class="red-slide-title">Mission</h3>
         <div class="red-slide-rule"></div>
         <p class="red-slide-statement">Establish the winning culture.</p>
@@ -592,7 +592,7 @@
     <div class="section-head center">
       <div class="section-kicker">Our Strategic Pillars</div>
       <h2 class="section-title">Five Pillars That Power Our Plan</h2>
-      <p class="section-subtitle">How we deliver on our purpose, vision, and 2025 mission.</p>
+      <p class="section-subtitle">How we deliver on our purpose, vision, and 2026 mission.</p>
     </div>
     <div class="grid-5">
       <div class="card pillar-card">
@@ -650,7 +650,7 @@
     <div class="section-head center">
       <div class="section-kicker">Winning Behaviors</div>
       <h2 class="section-title">How We Show Up Every Day</h2>
-      <p class="section-subtitle">Five behaviors that bring our 2025 Mission and culture to life.</p>
+      <p class="section-subtitle">Five behaviors that bring our 2026 Mission and culture to life.</p>
     </div>
     <div class="grid-5" id="behaviorsGrid"></div>
   </section>
@@ -742,22 +742,64 @@
     { number: "04", title: "Be Focused and Purposeful", body: "Prioritize what matters most and execute with intention.", icon: "target" },
     { number: "05", title: "Be Open and Transparent", body: "Communicate honestly, share early, and invite the conversation.", icon: "eye" }
   ];
+var ogsm = [
+  { kicker: "Develop", goal: "Develop a talented, engaged workforce", icon: "book-open", accent: "#111111",
+    strategies: [
+      "Strengthen leadership development (soft + technical skills)",
+      "Leverage sales capability programs (C2S, COC, Elite Selling)",
+      "Build leadership succession pipeline (Mgr+)"
+    ],
+    measures: [
+      "ME score +1% YoY",
+      "L101 ≥90% (6 mos)",
+      "LEAP ≥80% (leaders 1yr+)",
+      "≥85% certification (Essentials, Elevate, Sales)",
+      "≥80% internal promotions",
+      "100% roles with successor"
+    ]
+  },
 
-  var ogsm = [
-    { kicker: "Attract", goal: "Give every reason to join & stay", icon: "megaphone", accent: "#F40009",
-      strategies: ["Execute TA Playbook","Achieve staffing targets by leveraging workforce planning tool and expanding use of TA Heatmap","Develop and implement job family-specific interview guides","Provide world class onboarding experience"],
-      measures: ["Improve time to offer by 3%","90% or higher of % staffed (heatmap)","Achieve +76% 90-Day EE Retention","Complete 90% certification of YRJ Nonexempt EEs w/in first 6 months","Reyes Immersion: +95% eligible employees within first 6 months"] },
-    { kicker: "Develop", goal: "Develop a talented and highly engaged workforce", icon: "book-open", accent: "#111111",
-      strategies: ["Initiate the five supervisor training imperatives as a strategic foundation","Leverage leadership development programs","Identify high potentials (RCCB) with focus on FIFA & Olympics","Advance & expand Reyes Cares sustainability training"],
-      measures: ["Achieve 85% manager effectiveness","L101: +80% new leaders in first 90 days, remaining 10% within 4 mos.","LEAP: +80% of people leaders","85% completion of Operations Essentials of eligible leaders","Internal promotes 80%, 20% external","80%+ certification of eligible EEs for Reyes Cares Sustainability"] },
-    { kicker: "Cultivate", goal: "Cultivate a culture based on simplicity and well-being", icon: "heart-handshake", accent: "#F40009",
-      strategies: ["Cultivate resilience and enhance the emotional well-being of our leaders and employees","Simplify access to our tools and resources through HR Corner","Execute SWOT analysis and EE/GPTW actions"],
-      measures: ["Certify 90% of eligible EEs on emotional wellness course","Execute 1 wellness activity per quarter","Implement HR Corner by end of Q1 2025","Reduce chronic under-performers by 10% by facility","Achieve 80% employee engagement"] },
-    { kicker: "Be the Best", goal: "Be the best at what we do", icon: "trophy", accent: "#111111",
-      strategies: ["Sustain & expand workplace recognition awards, positioning us as an employer of choice","Enhance and leverage workforce analytics","Develop comp strategy to address risks for non-union workforce","Prepare for HRDT pilot"],
-      measures: ["Achieve certifications: Great Place to Work; Fortune\u2019s Best Workplace in Manufacturing and Production; ATD certification training award; Brandon Hall Award","Monthly report out on HR scorecard by facility","Get ahead of union campaigns and win"] }
-  ];
+  { kicker: "Be the Best", goal: "Be the best at what we do", icon: "trophy", accent: "#111111",
+    strategies: [
+      "Expand employer brand through awards",
+      "Strengthen employee relations training",
+      "Embed HR competency model",
+      "Deliver cross-functional workstreams"
+    ],
+    measures: [
+      "≥4 workplace awards",
+      "≥95% PER training (high-risk)",
+      "100% HR competency learning completion",
+      "≥85% workstream completion"
+    ]
+  },
 
+  { kicker: "Attract", goal: "Give every reason to join & stay", icon: "megaphone", accent: "#F40009",
+    strategies: [
+      "Optimize TA strategy & workforce planning",
+      "Deliver world-class onboarding (Reyes Immersion)"
+    ],
+    measures: [
+      "≥75% interview training completion",
+      "Time to offer ↓3% YoY",
+      "≥95% critical roles staffed",
+      "≥90% Reyes Immersion (6 mos)",
+      "≥70% new hire satisfaction (90 days)"
+    ] 
+  },
+
+  { kicker: "Cultivate", goal: "Cultivate simplicity & well-being", icon: "heart-handshake", accent: "#F40009",
+    strategies: [
+      "Align incentives to drive performance & results",
+      "Support digital transformation (HR file management)"
+    ],
+    measures: [
+      "≥80% incentive training (90 days)",
+      "≥90% employees current on training",
+      "≥20% files digitized"
+    ]
+  }
+];
   function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
 
   // Build contact cards
@@ -823,7 +865,7 @@
       return '<div class="card ogsm-card">' +
         '<div class="header" style="background:' + col.accent + ';">' +
           '<div class="row"><span class="ogsm-icon-tile"><i data-lucide="' + col.icon + '"></i></span><span class="ogsm-kicker">' + escapeHtml(col.kicker) + '</span></div>' +
-          '<div class="ogsm-goal-label">2025 Goal</div>' +
+          '<div class="ogsm-goal-label">2026 Goal</div>' +
           '<div class="ogsm-goal-text">' + escapeHtml(col.goal) + '</div>' +
         '</div>' +
         '<div class="ogsm-strategies-block">' +
